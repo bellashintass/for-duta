@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Duta ❤️</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6e7,#fff5f9);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+overflow:hidden;
+padding:20px;
+}
+
+.card{
+background:white;
+max-width:750px;
+width:100%;
+padding:40px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,.15);
+text-align:center;
+position:relative;
+z-index:5;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:60px;
+color:#ff4f8b;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#888;
+margin-bottom:30px;
+}
+
+button{
+background:#ff4f8b;
+color:white;
+border:none;
+padding:15px 35px;
+font-size:18px;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+#letter{
+display:none;
+text-align:left;
+margin-top:35px;
+line-height:1.9;
+color:#555;
+animation:fade 1.5s;
+}
+
+#letter p{
+margin-bottom:18px;
+}
+
+.sign{
+text-align:right;
+margin-top:35px;
+font-weight:bold;
+color:#ff4f8b;
+font-size:22px;
+}
+
+.biglove{
+text-align:center;
+font-size:32px;
+margin-top:30px;
+color:#ff2d75;
+font-weight:bold;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.heart{
+position:fixed;
+font-size:25px;
+animation:fall linear infinite;
+pointer-events:none;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Untuk Duta ❤️</h1>
+
+<p class="subtitle">
+Ada sesuatu yang ingin Bella sampaikan...
+</p>
+
+<button onclick="openLetter()">
+💌 Buka Surat
+</button>
+
+<div id="letter">
+
+<p>Hai sayang.</p>
+
+<p>
+Kalau kamu lagi baca ini, berarti aku lagi berani ngungkapin sesuatu yang mungkin selama ini lebih sering aku simpan.
+</p>
+
+<p>
+Makasih ya...
+udah hadir di hidup aku.
+Makasih udah selalu sabar sama aku yang kadang keras kepala, kadang overthinking, kadang nyebelin, tapi tetap kamu peluk.
+</p>
+
+<p>
+Aku tahu kita nggak sempurna.
+Kita pernah beda pendapat.
+Pernah sama-sama capek.
+Tapi anehnya, setiap selesai semuanya...
+aku tetap maunya pulang ke kamu.
+</p>
+
+<p>
+Aku nggak tahu masa depan bakal seperti apa.
+Tapi kalau Tuhan mengizinkan...
+aku pengen jalan sama kamu.
+Pelan-pelan juga nggak apa-apa.
+Asal sama kamu.
+</p>
+
+<p>
+Terima kasih sudah jadi rumah paling nyaman buat aku.
+Semoga nanti kita tetap saling memilih.
+Apa pun keadaannya.
+</p>
+
+<div class="biglove">
+❤️ I LOVE YOU DUTA ❤️
+</div>
+
+<div class="sign">
+Love,<br>
+Bella 🤍
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function openLetter(){
+document.getElementById("letter").style.display="block";
+}
+
+for(let i=0;i<70;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(4+Math.random()*6)+"s";
+
+heart.style.fontSize=(15+Math.random()*20)+"px";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
